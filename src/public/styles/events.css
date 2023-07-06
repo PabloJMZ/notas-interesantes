@@ -1,0 +1,36 @@
+@keyframes tracking-in-contract {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+}
+@keyframes close {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+@keyframes open {
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.animated-note{
+    animation: tracking-in-contract 1.5s linear both;
+}
+.change-close{
+    animation: close 0.3s linear both;
+}
+.change-open{
+    animation: open 0.5s linear both;
+}
+.disable{
+    cursor: not-allowed !important;
+}

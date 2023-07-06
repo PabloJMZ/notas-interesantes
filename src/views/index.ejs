@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/events.css">
+    <link rel="stylesheet" href="/styles/scroll-bar.css">
+    <title>Notes</title>
+</head>
+<body>
+    <nav>
+        <p>NoteFast</p>
+    </nav>
+    <div class="message">
+        <h1><span>Datos interesantes</span>,<br> sobre temas aleatorios</h1>
+        <div class="note-box">
+            <h2 id="note">
+                <span>"<%= phrase %>"</span> - <%= author %>
+            </h2>
+        </div>
+    </div>
+    <div class="description">
+        <h3>
+            Aprende aleatoriamente
+        </h3>
+        <p>Genera una nota con información interesante, de manera aleatoria las veces que quieras.</p>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div class="target" id="target">
+                <div class="top">
+                    <p>NoteFast</p>
+                </div>
+                <div class="text">
+                    <a id="link" href="<%= link %>" target="_blank">
+                        <p id="text">
+                            "<%= note %>"
+                        </p>
+                    </a>
+                </div>
+                <div class="bottom">
+                    <button id="button-get">Generar</button>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <div class="background"></div>
+        </div>
+    </div>
+    <script src="/js/events.js"></script>
+    <script src="/js/get-note.js"></script>
+</body>
+</html>

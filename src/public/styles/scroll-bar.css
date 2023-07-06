@@ -1,0 +1,17 @@
+/* Estilos para navegadores webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f0fff1; /* Color del fondo de la barra */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #cecece; /* Color del "pulgar" de la barra */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del "pulgar" de la barra en estado hover */
+  }
+  
